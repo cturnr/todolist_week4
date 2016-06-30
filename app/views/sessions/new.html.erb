@@ -3,21 +3,29 @@
 <head>
 <style>
 .center {
-    margin-top: 75px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
     border: 3px solid #73AD21;
     padding: 10px;
+    text-align: center;
+}
+.center2 {
+	margin-top: 125px;
+	text-align: center;
 }
 </style>
 </head>
 <body>
 
 
-
+<div class="center2">
+<h1>Todo Lists Login</h1>
+<h4>username: rich password: 123abc</h4>
+</div>
 <div class="center">
-<h1>Login</h1>
+
 
 <%= form_for(:user, url: sessions_path) do |f| %>
 <div class = "field"> <%= f.label :username %> <br/> <%= f.text_field :username %></div>

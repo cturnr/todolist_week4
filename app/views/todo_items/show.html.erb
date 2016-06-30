@@ -1,8 +1,13 @@
+
+
 <p id="notice"><%= notice %></p>
 
+
+
 <p>
-  <strong>Title:</strong>
+  <h2>Title:
   <%= @todo_item.title %>
+  </h2>
 </p>
 
 <p>
@@ -20,5 +25,8 @@
   <%= @todo_item.completed %>
 </p>
 
+<br>
 <%= link_to 'Edit', edit_todo_list_todo_item_path(@todo_list, @todo_item) %> |
 <%= link_to 'Back', @todo_list %>
+
+<br>
